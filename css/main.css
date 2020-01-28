@@ -2,14 +2,14 @@
 
 .tenez {
   font-family: tenez, sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   font-style: normal;
   color: #fff;
 }
 
 .karmina {
   font-family: karmina, serif;
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -21,13 +21,13 @@
 
 .nobel-reg {
   font-family: nobel, sans-serif;
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
 }
 
 .nobel-bold {
   font-family: nobel, sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -37,6 +37,10 @@
 
 .white-text {
   color: #fff;
+}
+
+.pink-text {
+  color: rgba(85, 23, 24, .9)
 }
 
 /* ......................Text....................... */
@@ -51,7 +55,7 @@ h2 {
 
 html {
   font-family: nobel, sans-serif;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .btn {
@@ -69,6 +73,8 @@ html {
   background-color: rgba(85, 23, 24, .6);
   color: #fff;
   border: none;
+  transition: .3s ease-out;
+
 
   /* box-shadow: inset 0px 0.5px 5px #000; */
 }
@@ -78,14 +84,18 @@ html {
   color: #fff;
   border: none;
   box-shadow: inset 0 .5px 5px #555;
+
 }
 
 /* ....................Header......................... */
 
 .banner-container {
-  height: 10rem;
+  height: 7.5rem;
   overflow: hidden;
-  box-shadow: 0 3px 15px #333;
+  /* box-shadow: 0 3px 15px #333; */
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
 
 .heading {
@@ -102,12 +112,28 @@ html {
   height: 100%;
 }
 
+.title {
+  left: 2rem;
+}
+
+.top-btn {
+  right: 1rem;
+  bottom: 0.5rem;
+  width: 2.5rem;
+}
+
+.arrow {
+  padding: 0.5rem 0;
+}
+
+
 /* ......................Nav....................... */
 
 nav {
   text-align: center;
   border-bottom: 1px solid #f2f2f2;
-  box-shadow: 0 .5px 15px #555;
+  /* box-shadow: 0 .5px 15px #555; */
+  margin-top: 7.5rem;
 }
 
 .current {
@@ -127,14 +153,19 @@ a {
   text-decoration: none;
 }
 
+footer {
+  background-image: linear-gradient(to bottom, rgba(85, 23, 24, .6), rgba(85, 23, 24, .6));
+}
+
 .content-card {
   background-color: #f2f2f2;
-  box-shadow: 0 5.5px 10px #000;
+  /* box-shadow: 0 5.5px 10px #000; */
   /* padding: 3rem; */
   /* margin: 0 1.5rem; */
   overflow: hidden;
   filter: grayscale(0%);
   margin-bottom: 1rem;
+  border-radius: 8px;
 
 }
 
@@ -156,7 +187,7 @@ a {
 .link-card:hover .img-bottom {
   filter: grayscale(80%);
   filter: brightness(50%);
-  transition: .5s ease-out;
+  transition: .3s ease-out;
 }
 
 .img-bottom {
@@ -165,8 +196,10 @@ a {
 
 .content-card-transparent {
   background-color: rgba(255, 255, 255, .9);
-  box-shadow: 0px 5.5px 10px #555;
+  /* box-shadow: 0px 5.5px 10px #555; */
   padding: 3rem;
+  border-radius: 8px;
+
 }
 
 .introduction {
@@ -176,15 +209,53 @@ a {
   background-position: right;
 }
 
+.recipe-a {
+  background-image: url("../images/choc-chip.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.recipe-b{
+  background-image: url("../images/crinkle.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.recipe-c {
+  background-image: url("../images/linzer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.recipe-d {
+  background-image: url("../images/trail-mix.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+/* .....................Recipe/Content........................ */
+
+.ingredient {
+  margin: 0;
+}
+
+.ing-col {
+  padding-right: 2rem;
+}
+
 @media only screen and (min-width: 60em) {
 
   .content-card-transparent {
-    box-shadow: 0 5.5px 10px #000;
+    /* box-shadow: 0 5.5px 10px #000; */
     margin: 0 3rem;
   }
 
   .content-card {
-    box-shadow: 0px 5.5px 10px #000;
+    /* box-shadow: 0px 5.5px 10px #000; */
     margin-bottom: 0;
   }
 
@@ -193,7 +264,7 @@ a {
   }
 
   .introduction {
-    box-shadow: inset 0 5.5px 10px #888;
+    /* box-shadow: inset 0 5.5px 10px #888; */
   }
 
 }
