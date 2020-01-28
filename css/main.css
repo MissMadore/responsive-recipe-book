@@ -143,6 +143,12 @@ nav {
   box-shadow: inset 0 .5px 5px #555;
 }
 
+.invisidiv {
+  width: 10px;
+  height: 10px;
+  top: -7.5rem;
+
+}
 /* .....................Intro/Content........................ */
 
 main {
