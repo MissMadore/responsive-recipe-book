@@ -96,6 +96,10 @@ html {
 
 /* ....................Header......................... */
 
+.skiplink {
+  visibility: hidden;
+}
+
 .banner-container {
   height: 7.5rem;
   overflow: hidden;
