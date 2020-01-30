@@ -1023,7 +1023,8 @@ select {
 /* stylelint-disable no-descending-specificity */
 
 button,
-.btn {
+.btn,
+.btn-card {
   cursor: pointer;
   display: inline-block;
   margin: 0;
